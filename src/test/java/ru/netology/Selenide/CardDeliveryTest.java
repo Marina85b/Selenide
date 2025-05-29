@@ -21,7 +21,7 @@ public class CardDeliveryTest {
     @Test
     void shouldApplication() {
         String date = setLocalDate(3);
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Москва");
         //$(byText("Выберите дату встречи с представителем банка")).click();
         $("[data-test-id=date] input").doubleClick().sendKeys(date);
@@ -38,7 +38,7 @@ public class CardDeliveryTest {
     @Test
     void shouldHuphenCity() {
         String date = setLocalDate(3);
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Санкт-Петербург");
         $("[data-test-id=date] input").doubleClick().sendKeys(date);
         $("[data-test-id=name] input").setValue("Петрова Мария");
@@ -53,7 +53,7 @@ public class CardDeliveryTest {
     @Test
     void shouldMoreThreeDays() {
         String date = setLocalDate(4);
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Москва");
         //$(byText("Выберите дату встречи с представителем банка")).click();
         $("[data-test-id=date] input").doubleClick().sendKeys(date);
@@ -70,7 +70,7 @@ public class CardDeliveryTest {
     @Test
     void shouldResultDoubleSurnam() {
         String date = setLocalDate(3);
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Пенза");
         //$(byText("Выберите дату встречи с представителем банка")).click();
         $("[data-test-id=date] input").doubleClick().sendKeys(date);
